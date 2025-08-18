@@ -1,4 +1,6 @@
+
 # bootcamp_Hemang_Dahiya
+
 # Bootcamp Repository
 ## Folder Structure
 - **homework/** → All homework contributions will be submitted here.
@@ -11,3 +13,6 @@ GitHub.
 - Include all required files for grading.
 ## Project Folder Rules
 - Keep project files organized and clearly named.
+
+- Keep project files organized and clearly named.
+
