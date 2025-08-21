@@ -47,4 +47,22 @@ DATA_DIR_PROCESSED=data/processed
 
 - All reading (`read_df()`) and writing (`write_df()`) utility functions use these environment variables to locate files, ensuring portability and easy configuration for different systems or collaborators.
 
+## Data Cleaning Strategy (Homework 6)
+
+The data cleaning process applied to the raw dataset includes the following steps:
+
+- **Fill Missing Values:**  
+  Missing values in numeric columns are filled using the median of the respective column. This method preserves the central tendency of the data without introducing bias.
+
+- **Drop Columns with Excessive Missing Data:**  
+  Columns with more than 50% missing values are dropped to maintain data quality and reduce noise.
+
+- **Normalize Numeric Data:**  
+  Numeric columns are scaled to a range of 0 to 1 using min-max normalization. This scaling facilitates downstream modeling and analysis by placing all numeric features on the same scale.
+
+- **Preservation of Categorical Data:**  
+  Non-numeric columns such as categorical or text data are left unchanged in this cleaning step to preserve their informational content.
+
+The cleaned dataset is saved to `data/processed/sample_data_cleaned.csv`. This modular cleaning approach ensures reproducibility, facilitates interpretation, and prepares the data for subsequent analysis or modeling tasks.
+
 
